@@ -1,6 +1,6 @@
 <script>
     export let value;
-    let colors = ['#5B5F97', '#FFC145', '#FF6B6C ', '#2EC4B6 ', '#D3C4E3', 'grey'];
+    let colors = ['#b0d3f1', '#b1ec9a', '#efb5bd ', '#f3daa4 ', '#35d0f4', '#888'];
     let index = 0;
     
     function handleClick() {
@@ -18,7 +18,6 @@
       width: 90px;
       height: 90px;
       background-color: whitesmoke;
-      border: 2px solid black;
       margin: 5px;
       padding: 5px;
       font-size: 20px;
