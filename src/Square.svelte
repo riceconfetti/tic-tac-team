@@ -15,8 +15,8 @@
   
   <style>
     .square {
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      height: 100px;
       background-color: whitesmoke;
       margin: 5px;
       padding: 5px;
