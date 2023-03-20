@@ -43,6 +43,6 @@
   .board {
     display: grid;
     grid-template-columns: repeat(var(--board_size), auto);
-    width: 500px;
+    width: auto;
   }
 </style>
