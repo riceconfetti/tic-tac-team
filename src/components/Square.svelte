@@ -1,6 +1,6 @@
 <script>
     export let value;
-    let colors = ['#b0d3f1', '#b1ec9a', '#efb5bd ', '#f3daa4 ', '#35d0f4', '#888'];
+    export let colors;
     let index = 0;
     
     function handleClick() {

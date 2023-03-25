@@ -34,6 +34,7 @@ export const icons = [
   { "name": "Layla", "url": "./icons/Layla.png" },
   { "name": "Lisa", "url": "./icons/Lisa.png" },
   { "name": "Lumine", "url": "./icons/Lumine.png" },
+  { "name": "Mika", "url": "./icons/Mika.png" },
   { "name": "Mona", "url": "./icons/Mona.png" },
   { "name": "Nahida", "url": "./icons/Nahida.png" },
   { "name": "Nilou", "url": "./icons/Nilou.png" },

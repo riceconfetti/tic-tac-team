@@ -1,11 +1,12 @@
 <script>
   import Square from "./Square.svelte";
-  import { icons } from "./characters.js";
+  import { icons } from "../assets/characters.js";
 
-  let size = 5;
+  export let size;
   let squares = [];
+  export let colors;
 
-  console.log(icons);
+  //console.log(icons);
 
   function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -18,6 +19,7 @@
 
   function getNewCharacter() {
     random = getRandomInt(0, range - 1);
+    //console.log( icons[random].name);
     squares.forEach((square) => {
       if (icons[random] == square) {
         getNewCharacter();
@@ -28,21 +30,22 @@
 
   for (let i = 0; i < size * size; i++) {
     let character = getNewCharacter();
-    console.log(character);
+    //console.log(character);
     squares.push(character);
   }
 </script>
 
 <div class="board" style="--board_size: {size}">
   {#each squares as square, i}
-    <Square value={square} />
+    <Square {colors} value={square} />
   {/each}
 </div>
 
 <style>
-  .board {
+  :global(.board) {
     display: grid;
     grid-template-columns: repeat(var(--board_size), auto);
     width: auto;
+    margin-top: 16px;
   }
 </style>
