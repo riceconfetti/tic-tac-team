@@ -1,6 +1,6 @@
 <script>
   import Square from "./Square.svelte";
-  import { icons } from "../assets/characters.js";
+  import icons from "../assets/characters.json";
 
   export let size;
   let squares = [];
